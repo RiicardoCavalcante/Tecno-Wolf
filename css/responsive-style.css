@@ -1,0 +1,61 @@
+
+
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .area-cabecalho {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        
+    }
+
+    #menu-button {
+        display: block;
+    }
+
+    .menu-burguer img {
+        margin: 5px 0px 5px 0px;
+    }
+
+    .area-menu ul {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu-item {
+        display: none;
+    }
+
+    .area-menu ul a {
+        display: flex;
+        justify-content: center;
+        align-items: last baseline;
+    }
+
+    .area-principal {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: self-start;
+        gap: 10px;
+        width: 90vw;
+        position: relative;
+    }
+
+    .area-lateral {
+        text-align: center;
+        height: 50vh;
+    }
+
+    .postagem img {
+        width: 300px;
+    }
+
+    .postagem {
+        margin: 0 5px 5px 5px;
+    }
+}

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+    background-image: url(../imagens/background.jpg);
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+
+
+/*-------- AREA DE MENU -----------*/
+
+.area-cabecalho {
+    background-color: rgba(0, 0, 0, 0.445);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.area-cabecalho .area-logo h1 {
+    color: rgb(30, 168, 214);
+}
+
+.area-cabecalho .area-logo .branco {
+    color: white;
+    font-size: 40px;
+}
+
+#menu-button {
+    display: none;
+}
+
+.menu-burguer img  {
+   color: white;
+   background-color: rgb(255, 255, 255);
+   cursor: pointer;
+}
+
+.menu-burguer button {
+    border: none;
+}
+
+.area-menu ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.area-cabecalho  .area-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.area-cabecalho  .area-menu a:hover {
+    background-color: white;
+    color: black;
+}
+
+/*---------------------------------------*/
+
+
+/*-------------AREA - PRINCIPAL ---------------*/
+
+.area-principal {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+}
+
+
+
+.postagem {
+    background-color: rgba(0, 0, 0, 0.359);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 15px 15px;
+    border-radius: 10px;
+    width: 70vw;
+}
+
+.saiba-mais {
+    color: white;
+}
+
+.postagem h2 {
+    margin-top: 10px;
+}
+
+.postagem img {
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.area-lateral .conteudo-lateral h3 {
+    color: white;
+}
+
+.area-principal .conteudo-lateral {
+    border-bottom: 1px solid gray;
+}
+
+
+
+.area-principal .area-lateral {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.359);
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.area-lateral {
+    height: 100vh ;
+}
+
+
+
+.rodape {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin-top: 10px;
+}
+
+
