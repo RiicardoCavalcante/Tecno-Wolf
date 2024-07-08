@@ -1,16 +1,19 @@
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /*-------------AREA CABEÇALHO------------------*/
     .area-cabecalho {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #menu-button {
@@ -22,9 +25,9 @@
     }
 
     .area-menu ul {
-        justify-content: center;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     #menu-item {
@@ -37,25 +40,33 @@
         align-items: last baseline;
     }
 
+    /*-------------AREA PRINCIPAL------------------*/
+
     .area-principal {
         display: flex;
         flex-direction: column-reverse;
-        align-items: self-start;
         gap: 10px;
-        width: 90vw;
-        position: relative;
+        width: 500px;
+        padding: 10px;
     }
 
-    .area-lateral {
-        text-align: center;
-        height: 50vh;
+    .area-postagens {
+        width: 460px;
+    }
+    
+    .postagem {
+        margin: 0 5px 5px 5px;
     }
 
     .postagem img {
         width: 300px;
     }
 
-    .postagem {
-        margin: 0 5px 5px 5px;
+    /*---------------CONTEÚDO LATERAL ----------------------*/
+    
+    .area-lateral {
+        text-align: center;
+        margin-left: 5px;
     }
+
 }

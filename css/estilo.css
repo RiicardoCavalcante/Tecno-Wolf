@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%;
     background-color: gray;
     color: rgb(255, 255, 255);
@@ -59,12 +59,14 @@ body {
 .area-cabecalho  .area-menu a {
     color: white;
     text-decoration: none;
+    display: inline-block;
     font-size: 20px;
+    transition: 0.8s;
 }
 
 .area-cabecalho  .area-menu a:hover {
-    background-color: white;
-    color: black;
+   border-bottom: 0.1rem solid white;
+   transform: scale(1.1);
 }
 
 /*---------------------------------------*/
@@ -74,57 +76,66 @@ body {
 
 .area-principal {
     display: flex;
+    flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: space-around;
     border-radius: 0 10px 10px 0;
-    text-align: center;
+    width: 980px;
 }
 
+/*--------------AREA DE POSTAGENS -------------------------------*/
 
+.area-postagens {
+    width: 660px;
+}
 
 .postagem article {
     background-color: white;
     color: black;
     padding: 10px;
     display: flex;
-    flex-direction: column;
-    margin: 0 0 15px 15px;
-    border-radius: 10px;
-    width: 70vw;
+    flex-direction: column;  
 }
 
+.postagem article .data-postagem {
+    font-size: 0.8rem;
+    display: block;
+    margin: 10px 0 10px 0
+}
+
+.postagem article p {
+    margin: 10px 0 10px 0;
+}
+
+
 .saiba-mais {
-    color: white;
+    color: rgb(106, 20, 187);
+    text-align: center;
 }
 
 .postagem h2 {
     margin-top: 10px;
+    color: rgb(106, 20, 187);
 }
 
-.postagem img {
-    margin: 0 auto;
-    margin-bottom: 15px;
-}
-
-.area-lateral .conteudo-lateral h3 {
-    color: white;
-}
-
-.area-principal .conteudo-lateral {
-    border-bottom: 1px solid gray;
-}
-
-
+/*------------AREA LATERAL ------------------------------*/
 
 .area-lateral {
-    width: 300px;
+    width: 260px;
     background-color: white;
     color: black;
-    margin-left: 15px;
     gap: 25px;
     padding: 10px;
 }
 
+.area-principal .conteudo-lateral {
+    border-bottom: 1px solid gray;
+    color: black;
+}
+
+.area-lateral .conteudo-lateral h3 {
+    color: black;
+}
 
 .rodape {
     background-color: black;
